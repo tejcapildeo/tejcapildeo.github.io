@@ -11,6 +11,8 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    
+    
 }
 
 header {
@@ -56,19 +58,18 @@ header nav ul li a {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; /* Maintains space between the main two columns */
+    align-items: flex-start; /* Aligns items to the top */
 }
 
 .project {
     background: #e4e4e4;
     padding: 10px;
-    margin-bottom: 20px;
-    width: 45%;
+    margin-bottom: 20px; /* Keeps space between rows */
+    flex: 1 1 45%; /* Adjusted to take up 45% of the container width */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    margin-top: 0;
+    border-radius: 10px;
+    margin: 10px 2%; /* Additional spacing on sides */
 }
 
 footer {
@@ -79,4 +80,21 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+
+
+.links {
+    display: flex;
+  justify-content: space-between;
+}
+
+#tejimage {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }

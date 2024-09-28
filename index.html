@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tej Capildeo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="embedded/178242693-tej-letter-initial-logo-design-vector-illustration.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Tej Capildeo</h1>
+            <div>
+                <h1>Tej Capildeo</h1>
+                <img src="embedded/tej image.jpeg" alt="" id="tejimage">
+            </div>
+            
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="intro">
+    <section id="about" class="intro">
         <div class="container">
             <h2>About Me</h2>
             <p>Hi! I'm currently a fourth year Computer Science student at the University of Toronto and an aspiring software
@@ -35,47 +39,88 @@
 
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>My Projects</h2>
+            <h2>Projects</h2>
             <div class="projects">
-                <!-- Add your projects here -->
+
+                <div class="project">
+                    <h3>CalorieBuddy - Calorie Deficit Recipe Webapp</h3>
+                    <p>Developed a fully responsive, dynamic web application that generates personalized meal plans based on user-defined calorie goals and dietary restrictions.
+                        This idea was inspired by my grandmother, who told me she wanted to track her calories but didn't know how.
+                        To build this, I integrated the Spoonacular API to fetch real-time recipe data, including nutritional information and preparation time.
+                        I also designed an intuitive UI with React.js, ensuring seamless user interaction and optimal performance across devices. 
+                        
+                    </p>
+                    <div class="links">
+                        <a href="https://calorie-deficit.netlify.app/">Link to CalorieBuddy</a>
+                        <a href="https://github.com/tejcapildeo/calorie-deficit-recipes">Link to code</a>
+                    </div>
+                </div>
+            
                 <div class="project">
                     <h3>Petpal - A pet adoption website</h3>
                     <p>Built a website that helps users find the perfect pet to adopt, based on factors such as location, breed and age. 
                         This allows for more efficient matching of owners to pets, making the search process easier, more accurate and quicker.
                         Used Django REST Framework to build the backend with RESTful APIs and React + Bootstrap for the frontend.
                     </p>
-                    <a href="">Link to petpal</a>
-                    <a href="">Link to code </a>
+                    <div class="links">
+                        <a href="https://github.com/harshsbajwa/petpal">Link to code </a>
+                    </div>
                 </div>
+
                 <div class="project">
-                    <h3>Workout app</h3>
-                    <p>Describe thie stuff here</p>
+                    <h3>Workout Planing Application </h3>
+                    <p>As the vice-leader of the group, I was responsible for organizing meetings and ensuring that all milestones were met on time.
+                     Our project involved developing a fitness application where users could create accounts, log in, and generate customizable workout plans. We also implemented features for displaying progress through basic visualization graphs, using Java, JSwing, and SQL. Throughout the development process, we adhered to best coding practices, including working with version control, applying SOLID design principles, implementing Clean Architecture, and utilizing UML for design documentation.</p>
+                    <div class="links"></div>
+                        <a href="https://github.com/CSC207-2022F-UofT/course-project-git_gud">Link to code </a>
+                    </div>
                 </div>
+
+                <div class="project">
+                    <h3>Giftit - Mobile Application Design </h3>
+                    <p>This was a project based on user-centred design of interactive systems. Collaborated on a 5 person team to create an application that solves
+                        the problem of picking the right gift for a recipient. We first used interviews and questionaires to better understand our primary stakeholders
+                        and the problem. From this we were able to create a low fidelity prototype and conduct extensive usability testing for refinement. We used a 
+                        multiple iteration process and were able to come up with a final high fidelity prototype using Figma. We then presented our findings.  
+                    </p>
+                    <div class="links"></div>
+                        <a href="https://www.figma.com/design/wYyMJXVZbYw0Cwxw0uN3VW/GiftIt?node-id=0-1&node-type=canvas">Link to prototype </a>
+                    </div>
+                </div>
+
+                
+
             </div>
         </div>
+        
     </section>
 
-    <section id="resume" class="resume">
+    <!-- <section id="resume" class="resume">
         <div class="container">
             <h2>Resume</h2>
-            <!-- Add a downloadable resume or a brief summary -->
-            <p>Still need to do this one!!!</p>
+            
+            <button id="toggle-pdf">View PDF</button>
+
+            
+            <div id="pdf-viewer" style="display: none;">
+                <iframe src="embedded/resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:your.email@example.com">put my email her</a></p>
-            <!-- Add more contact methods or a form -->
+            <p>Phone: 1(437)881-8754</p>
+            <p>Email: <a href="mailto:your.email@example.com"> tej.capildeo@mail.utoronto.ca</a></p>
+            <a href="https://www.linkedin.com/in/tej-capildeo-099871292/">Linkedin </a>
+            <p> <a href="https://github.com/tejcapildeo">github</a> </p>
+            
+           
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Tej Capildeo. All Rights Reserved.</p>
-        </div>
-    </footer>
+    
 
     <script src="script.js"></script>
 </body>
