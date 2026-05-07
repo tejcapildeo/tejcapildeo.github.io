@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #080808;
+  }
+
+  body {
+    @apply bg-[#080808] text-[#e5e5e5] font-sans antialiased;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+
+  ::selection {
+    background-color: rgba(6, 182, 212, 0.25);
+    color: #e5e5e5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #080808;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+}
+
+@layer utilities {
+  .section-label {
+    @apply text-xs font-mono tracking-[0.2em] uppercase text-cyan-500 mb-3;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[#f0f0f0] mb-4;
+  }
+
+  .section-divider {
+    @apply w-12 h-px bg-cyan-500 mb-12;
+  }
+
+  .card {
+    @apply bg-[#0f0f0f] border border-[#1c1c1c] rounded-lg p-6 transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply border-cyan-500/30;
+    box-shadow: 0 0 24px rgba(6, 182, 212, 0.06);
+  }
+
+  .tag {
+    @apply font-mono text-xs px-2.5 py-1 rounded border border-[#222] text-[#888] transition-colors duration-200;
+  }
+
+  .tag:hover {
+    @apply border-cyan-500/40 text-cyan-400;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 bg-cyan-500 text-[#080808] font-semibold text-sm rounded-md
+           hover:bg-cyan-400 transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 border border-[#2a2a2a] text-[#ccc] font-medium text-sm rounded-md
+           hover:border-cyan-500/50 hover:text-cyan-400 transition-colors duration-200;
+  }
+}
